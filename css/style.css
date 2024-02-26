@@ -27,7 +27,6 @@
     font-style: normal;
 }
 
-<<<<<<< Updated upstream
 /* NAVBAR */
 .nav-logo {
     width: 90px;
@@ -56,8 +55,12 @@
     height: 200px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-=======
+}
+
 .logo--white {
     width: 90px;
->>>>>>> Stashed changes
+}
+
+.account-nav {
+    color: var(--gray);
 }
