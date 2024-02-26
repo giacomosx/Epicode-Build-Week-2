@@ -27,6 +27,7 @@
     font-style: normal;
 }
 
+<<<<<<< Updated upstream
 /* NAVBAR */
 .nav-logo {
     width: 90px;
@@ -60,4 +61,8 @@
     width: 230px;
     height: 200px;
     border-bottom-right-radius: 10px;
+=======
+.logo--white {
+    width: 90px;
+>>>>>>> Stashed changes
 }
