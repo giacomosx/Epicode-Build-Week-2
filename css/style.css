@@ -50,10 +50,15 @@
     height: 200px;
 }
 
-.grid-img-small-right {
+.grid-img-small-top-right {
     width: 230px;
     height: 200px;
     border-top-right-radius: 10px;
+}
+
+.grid-img-small-bottom-right {
+    width: 230px;
+    height: 200px;
     border-bottom-right-radius: 10px;
 }
 
