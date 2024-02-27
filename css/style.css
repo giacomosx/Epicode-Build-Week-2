@@ -71,8 +71,8 @@
 }
 
 .searchbar {
-    padding: 5px 20px;
-    border-radius: 50px;
+    padding: 10px 20px;
+    border-radius: 55px;
 }
 
 .searchbar .form-control {
@@ -96,15 +96,18 @@
 }
 
 .searchbar__button--lg {
-    height: 45px;
-    width: 45px;
+    height: 55px;
+    width: 55px;
     position: absolute;
-    right: 15px;
-    transform: translateX(50%);
+    right: 0;
 }
 
 .searchbar__button--mobile {
     width: 100%;
+}
+
+.card-img {
+    max-width: 80px;
 }
 
 @media only screen and (max-width: 767px) {
