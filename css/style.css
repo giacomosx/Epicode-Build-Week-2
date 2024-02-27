@@ -38,7 +38,14 @@ figure{
 }
 
 .nav-link {
-    text-decoration: none;
+    font-weight: bolder;
+    text-decoration: none;    
+}
+
+.iconNav{
+    color: #808080;
+    width: 30px;
+    height: 30px;
 }
 
 /* GRID IMAGES */
