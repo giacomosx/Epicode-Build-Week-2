@@ -38,29 +38,19 @@
 }
 
 /* GRID IMAGES */
-.grid-img-big {
-    width: 475px;
-    height: 400px;
+.img-big {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-.grid-img-small {
-    width: 230px;
-    height: 200px;
-}
-
-.grid-img-small-top-right {
-    width: 230px;
-    height: 200px;
+.img-small-top {
     border-top-right-radius: 10px;
 }
 
-.grid-img-small-bottom-right {
-    width: 230px;
-    height: 200px;
+.img-small-bottom {
     border-bottom-right-radius: 10px;
 }
+
 
 .logo--white {
     width: 90px;
@@ -89,6 +79,7 @@
     color: white;
 }
 
+
 .searchbar__button--lg {
     height: 45px;
     width: 45px;
@@ -105,9 +96,7 @@
     .searchbar {
         border-radius: 5px;
     }
-
     .searchbar__container-button {
         max-width: 100%;
     }
-  }
-  
+}
