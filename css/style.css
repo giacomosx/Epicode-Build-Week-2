@@ -87,6 +87,12 @@
 .searchbar__button {
     background-color: var(--pink);
     color: white;
+    transition: all 500ms ease;
+}
+
+.searchbar__button:hover {
+    background-color:hsl(348, 70%, 46%);
+    color: white;
 }
 
 .searchbar__button--lg {
@@ -104,6 +110,7 @@
 @media only screen and (max-width: 767px) {
     .searchbar {
         border-radius: 5px;
+        width: 100%;
     }
 
     .searchbar__container-button {

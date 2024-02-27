@@ -13,39 +13,35 @@
 <body class="roboto-regular">
     <header class="bg-black py-2 ">
         <div class="container-md ">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="navbar navbar-expand-lg">
-                        <div class="logo--white navbar-brand ">
-                            <img src="./assets/logo.png" alt="" class="w-100 h-100">
-                        </div>
-                        <div class="settings-nav order-lg-2 ">
-                            <ul class="nav">
-                                <li class="nav-item"><a href="" class="nav-link d-none d-md-block  text-white">Become a host</a></li>
-                                <li class="nav-item"><a href="" class="nav-link text-white "><i
-                                            class="bi bi-globe"></i></a></li>
-                                <li class="nav-item align-self-center ">
-                                    <div
-                                        class="rounded-pill bg-white account-nav d-flex justify-content-between gap-2 px-2 align-items-center ">
-                                        <i class="bi fs-5 bi-list"></i>
-                                        <i class="bi fs-4 bi-person-circle"></i>
-                                    </div>
-                                </li>
-                                <li class="nav-item align-self-center ">
-                                    <button class="navbar-toggler text-white pe-0 " type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><i class="bi bi-list"></i></button>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="collapse navbar-collapse align-self-lg-start d-lg-flex justify-content-center order-lg-1 " id="mainNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item"><a href="" class="nav-link text-white">Places to stay</a></li>
-                                <li class="nav-item"><a href="" class="nav-link text-white">Experiences</a></li>
-                                <li class="nav-item"><a href="" class="nav-link text-white">Online Experiences</a></li>
-                            </ul>
-                        </div>
-                    </nav>
+            <nav class="navbar navbar-expand-lg row">
+                <div class="navbar-brand col-4 col-lg-3 me-0">
+                    <img src="./assets/logo.png" alt="" class="logo--white">
                 </div>
-            </div>
+                <div class="settings-nav col-8 order-lg-2 col-lg-3 justify-content-end d-flex">
+                    <ul class="nav gap-2 gap-xl-3  ">
+                        <li class="nav-item"><a href="" class="nav-link px-0  d-none d-md-block  text-white">Become a host</a></li>
+                        <li class="nav-item"><a href="" class="nav-link px-0  text-white "><i
+                                    class="bi bi-globe"></i></a></li>
+                        <li class="nav-item align-self-center ">
+                            <div
+                                class="rounded-pill bg-white account-nav d-flex justify-content-between gap-2 px-2 align-items-center ">
+                                <i class="bi fs-5 bi-list"></i>
+                                <i class="bi fs-4 bi-person-circle"></i>
+                            </div>
+                        </li>
+                        <li class="nav-item align-self-center ">
+                            <button class="navbar-toggler text-white pe-0 " type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><i class="bi bi-list"></i></button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse align-self-lg-start d-lg-flex justify-content-center order-lg-1 col-lg-6" id="mainNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="" class="nav-link text-white">Places to stay</a></li>
+                        <li class="nav-item"><a href="" class="nav-link text-white">Experiences</a></li>
+                        <li class="nav-item"><a href="" class="nav-link text-white">Online Experiences</a></li>
+                    </ul>
+                </div>
+            </nav>
             <div class="row justify-content-center ">
                 <div class="col-12 d-flex justify-content-md-center">
                     <div class="searchbar bg-white small px-2 d-flex flex-column flex-md-row px-md-3 mt-3 mt-md-0 ">
@@ -79,13 +75,13 @@
     <section id="hero" class="bg-black">
         <div class="container-lg">
             <div class="row">
-                <div class="col-12 col-md-2 d-flex align-items-center justify-content-center mt-3 ">
+                <div class="col-12 col-md-3 col-lg-2 d-flex align-items-center justify-content-center mt-3 ">
                     <div class="hero__claim d-flex flex-column align-items-center align-items-md-start ">
-                        <h3 class="text-white display-1 roboto-bold ">Go Near</h3>
-                        <button class="btn btn-light hero__button small ">Explore nearby stays</button>
+                        <h3 class="text-white display-1 roboto-bold lh-1">Go Near</h3>
+                        <button class="btn btn-light btn-sm hero__button small ">Explore nearby stays</button>
                     </div>
                 </div>
-                <div class="col-12 col-md-10 ">
+                <div class="col-12 col-md-9 col-lg-10 px-0 ">
                     <div class="hero__img d-flex justify-content-center justify-content-md-start ">
                         <img src="./assets/home.jpg" alt="" class="w-75 img-fluid">
                     </div>
@@ -93,6 +89,13 @@
             </div>
         </div>
     </section>
+    <main class="container-md">
+        <div class="row">
+            <div class="col">
+                <div class="card"></div>
+            </div>
+        </div>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
 </body>
