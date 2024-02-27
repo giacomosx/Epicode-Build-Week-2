@@ -38,7 +38,6 @@ figure{
 }
 
 .nav-link {
-    font-weight: bolder;
     text-decoration: none;    
 }
 
@@ -117,6 +116,28 @@ figure{
 .searchbar__button--mobile {
     width: 100%;
 }
+
+
+/* results style */
+
+.plusIcon{
+    width: 30px;
+    height: 30px;
+    color: #F5385D;
+}
+
+.buttonReset{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.buttonSetInfo{
+    border: 1px solid #808080;
+    border-radius: 20px;
+}
+
 
 @media only screen and (max-width: 767px) {
     .searchbar {

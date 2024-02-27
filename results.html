@@ -23,10 +23,10 @@
                             <img src="./assets/logo-pink.png" alt="airbnb" class="w-100">
                         </figure>
                     </a>
-                    <div class="d-flex justify-content-between align-items-center gap-3">
-                        <a href="#" class="nav-link">Become a Host</a>
+                    <div class="d-flex justify-content-between align-items-center gap-4">
+                        <a href="#" class="nav-link">Become a host</a>
                         <i class="bi bi-globe"></i>
-                        <div class="d-flex justify-content-center  align-items-center ">
+                        <div class="d-flex justify-content-center  align-items-center gap-1">
                             <ion-icon name="menu-outline"></ion-icon>
                             <ion-icon name="person-circle" class="iconNav"></ion-icon>
                         </div>
@@ -35,14 +35,37 @@
             </div>
         </div>
     </nav>
-    <main>
+    <main class="container-xl">
+        <section class="row ">
+            <div class="col-12">
+                <p class="m-0">
+                    10 stays
+                </p>
+                <div class="d-flex align-items-center">
+                    <h3>
+                        Stays in Genova
+                    </h3>
+                    <button class="buttonReset d-flex align-items-center">
+                        <ion-icon name="add-circle" class="plusIcon"></ion-icon>
+                    </button>
+                </div>
+            </div>
+            <div class="col-12 d-flex gap-2 py-3">
+                <button class="buttonSetInfo py-1 px-2">Available houses</button>
+                <button class="buttonSetInfo py-1 px-2">Booked houses</button>
+                <button class="buttonSetInfo py-1 px-2">All houses</button>
+            </div>
+            <p class="mb-0 mt-2">
+                Enter dates and number to see the total price per night
+            </p>
+        </section>
 
     </main>
     <footer>
 
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
