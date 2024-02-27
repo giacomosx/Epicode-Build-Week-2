@@ -69,3 +69,45 @@
 .account-nav {
     color: var(--gray);
 }
+
+.searchbar {
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+
+.searchbar .form-control {
+    border: none !important;
+    font-size: 0.875rem !important;
+}
+
+.searchbar__container-button {
+    max-width: 50px;
+}
+
+.searchbar__button {
+    background-color: var(--pink);
+    color: white;
+}
+
+.searchbar__button--lg {
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    right: 15px;
+    transform: translateX(50%);
+}
+
+.searchbar__button--mobile {
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .searchbar {
+        border-radius: 5px;
+    }
+
+    .searchbar__container-button {
+        max-width: 100%;
+    }
+  }
+  
