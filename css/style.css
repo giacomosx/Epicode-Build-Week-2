@@ -8,6 +8,10 @@
     --gray: #808080;
 }
 
+figure{
+    margin: 0;
+    padding: 0;
+}
 
 .roboto-light {
     font-family: "Roboto", sans-serif;
@@ -61,8 +65,8 @@
 }
 
 .searchbar {
-    padding: 5px 20px;
-    border-radius: 50px;
+    padding: 10px 20px;
+    border-radius: 55px;
 }
 
 .searchbar .form-control {
@@ -77,24 +81,34 @@
 .searchbar__button {
     background-color: var(--pink);
     color: white;
+    transition: all 500ms ease;
+}
+
+.searchbar__button:hover {
+    background-color:hsl(348, 70%, 46%);
+    color: white;
 }
 
 
 .searchbar__button--lg {
-    height: 45px;
-    width: 45px;
+    height: 55px;
+    width: 55px;
     position: absolute;
-    right: 15px;
-    transform: translateX(50%);
+    right: 0;
 }
 
 .searchbar__button--mobile {
     width: 100%;
 }
 
+.card-img {
+    max-width: 80px;
+}
+
 @media only screen and (max-width: 767px) {
     .searchbar {
         border-radius: 5px;
+        width: 100%;
     }
     .searchbar__container-button {
         max-width: 100%;
