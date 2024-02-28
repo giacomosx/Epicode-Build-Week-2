@@ -1,7 +1,7 @@
 let pages = {
-    index: 'http://127.0.0.1:5500/index.html',
-    results: 'http://127.0.0.1:5500/results.html',
-    apartaments: 'http://127.0.0.1:5500/apartment.html'
+    index: `/index.html`,
+    results: '/results.html',
+    apartaments: '/apartment.html'
 }
 
 
@@ -32,6 +32,7 @@ const arrayValue = [
     4,
     5
 ]
+
 
 function cards() {
     const cardsRow = document.querySelector('.cardsRow')
@@ -86,11 +87,11 @@ function cards() {
     }
 }
 
-if (window.location.href === pages.results) {
+if (window.location.pathname === pages.results) {
     cards();
 }
 
-if (window.location.href === pages.index) {
+if (window.location.pathname === pages.index) {
     const header = document.querySelector('header');
     const hero = document.getElementById('hero');
     const navbar = document.querySelector('ul.navbar-nav')
