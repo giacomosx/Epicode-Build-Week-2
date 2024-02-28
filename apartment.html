@@ -50,10 +50,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-md-6 ps-1 ps-md-0 pe-1 pe-md-0">
                 <img src="./assets/1.webp" class="w-100 h-100 object-fit-cover img-big" alt="">
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6 pt-1 pt-md-0 ps-1 pe-md-0">
                 <div class="row pb-2">
                     <div class="col-6 pe-0">
                         <img src="./assets/2.webp" class="w-100" alt="">
@@ -72,6 +72,99 @@
                 </div>
             </div>
         </div>
+        <div class="row mt-5">
+            <div class="col-12 col-md-8 d-flex flex-column">
+                <div>
+                    <h5>House - Host: Erica</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="d-flex align-items-center gap-3 pb-4">
+                    <i class="bi bi-house-door"></i>
+                    <div>
+                        <p class="fw-bold m-0">House</p>
+                        <p class="m-0">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-3 pb-4">
+                    <i class="bi bi-stars"></i>
+                    <div>
+                        <p class="fw-bold m-0">Advanced Cleaning Methods</p>
+                        <p class="m-0">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-3 pb-4">
+                    <i class="bi bi-geo-alt"></i>
+                    <div>
+                        <p class="fw-bold m-0">Inverness</p>
+                        <p class="m-0">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-3 pb-4">
+                    <i class="bi bi-calendar-week"></i>
+                    <div>
+                        <p class="fw-bold m-0">Cancellation Terms and Fees</p>
+                        <p class="m-0">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-3 pb-4">
+                    <i class="bi bi-book"></i>
+                    <div>
+                        <p class="fw-bold m-0">Rules of the House</p>
+                        <p class="m-0">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="d-flex justify-content-between">
+                    <h6>Add dates to see the prices</h6>
+                    <p>4.0, 6 ratings</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <label for="start"></label>
+                    <input type="date" id="start" name="trip-start" class="form-control"/>
+                    <label for="end"></label>
+                    <input type="date" id="end" name="trip-end" class="form-control"/>
+                </div>
+                <div class="d-flex justify-content-center ">
+                    <input type="text" placeholder="Guests" class="w-100 form-control">
+                </div>
+                <div>
+                    <button class="booking-btn form-control mt-2">Cancel Booking</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="row mt-4 d-flex align-content-center ">
+                    <div class="col-6">
+                        <label for="nameInput" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="nameInputField" placeholder="Enter Name">
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <label for="star-select" class="form-label">Rating</label>
+                        <div>
+                            <select name="stars" id="star-select" class="form-control">
+                                <option value="">Please choose a rating</option>
+                                <option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="three">3</option>
+                                <option value="four">4</option>
+                                <option value="five">5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-10">
+                        <div class="mt-3 mb-3">
+                            <label for="reviewInput" class="form-label">Review</label>
+                            <textarea class="form-control" id="reviewInputField" rows="3" placeholder="Type in your review"></textarea>
+                          </div>
+                    </div>
+                </div>
+                
+        </div>
+        
     </section>
 
     <script src="./js/script.js"></script>
