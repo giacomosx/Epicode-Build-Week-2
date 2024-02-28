@@ -1,3 +1,10 @@
+let pages = {
+    index: 'http://127.0.0.1:5500/index.html',
+    results: 'http://127.0.0.1:5500/results.html',
+    apartaments: 'http://127.0.0.1:5500/apartment.html'
+}
+
+
 /* results */
 const arrayImg = [
     './assets/1.webp',
@@ -32,13 +39,13 @@ function cards() {
     for (let index = 0; index < 10; index++) {
         /* colCard */
         const colCard = document.createElement('div')
-        colCard.classList.add('col', 'flex-column','d-flex', 'justify-content-center', 'align-items-center')
+        colCard.classList.add('col', 'flex-column', 'd-flex', 'justify-content-center', 'align-items-center')
         cardsRow.append(colCard)
 
 
         /* contenitore card */
         const cardBnb = document.createElement('div')
-        cardBnb.classList.add('cardBnb','w-100', 'pb-5')
+        cardBnb.classList.add('cardBnb', 'w-100', 'pb-5')
         colCard.append(cardBnb)
 
         /* immagine del luogo */
@@ -77,70 +84,75 @@ function cards() {
 
 
     }
-} cards()
-
-
-const header = document.querySelector('header');
-const hero = document.getElementById('hero');
-const observered = document.querySelector('.observed'); 
-const navbar = document.querySelector('ul.navbar-nav')
-const searchbar = document.querySelector('.searchbar');
-const searchbarInputs = document.querySelectorAll('.searchbar input');
-const searchbarButton = document.querySelector('.searchbar__button');
-
-
-window.addEventListener('scroll', ()=> {
-    if(this.innerWidth >= 1024) {
-        searchbarAnimation();
-
-        if (this.scrollY >= (hero.clientHeight)) {
-            changeHeader(true)
-        } else {
-            changeHeader(false)
-        }
-    }
-})
-
-
-const searchbarAnimation = () => {
-
-    if(this.scrollY > header.clientHeight) {
-        navbar.classList.add('scale-0');
-        searchbarInputs.forEach(input => {
-            input.classList.add('d-none')
-        })
-        searchbar.classList.add('searchbar--small', 'shadow');
-        searchbarButton.classList.add('searchbar__button--small');
-    }
-    else {
-        navbar.classList.remove('scale-0');
-        searchbarInputs.forEach(input => {
-            input.classList.remove('d-none')
-        })
-        searchbar.classList.remove('searchbar--small', 'shadow');
-        searchbarButton.classList.remove('searchbar__button--small');     
-    }
 }
 
+if (window.location.href === pages.results) {
+    cards();
+}
 
-function changeHeader(bool) {
-    let isVisible = bool;
-    const logo = document.querySelector('.logo--white');
-    const menu = document.querySelectorAll('.settings-nav a.nav-link');
+if (window.location.href === pages.index) {
+    const header = document.querySelector('header');
+    const hero = document.getElementById('hero');
+    const navbar = document.querySelector('ul.navbar-nav')
+    const searchbar = document.querySelector('.searchbar');
+    const searchbarInputs = document.querySelectorAll('.searchbar input');
+    const searchbarButton = document.querySelector('.searchbar__button');
 
-    if (isVisible) {
-        header.classList.add('bg-white', 'shadow-sm');
-        logo.src = './assets/logo-pink.png';
-        menu.forEach(link => {
-            link.classList.remove('text-white')
-            link.classList.add('text-secondary')
-        })
-    } else {
-        header.classList.remove('bg-white', 'shadow-sm');
-        logo.src = './assets/logo.png';
-        menu.forEach(link => {
-            link.classList.add('text-white')
-            link.classList.remove('text-secondary')
-        })
+
+    window.addEventListener('scroll', () => {
+        if (this.innerWidth >= 1024) {
+            searchbarAnimation();
+
+            if (this.scrollY >= (hero.clientHeight)) {
+                changeHeader(true)
+            } else {
+                changeHeader(false)
+            }
+        }
+    })
+
+
+    const searchbarAnimation = () => {
+
+        if (this.scrollY > header.clientHeight) {
+            navbar.classList.add('scale-0');
+            searchbarInputs.forEach(input => {
+                input.classList.add('d-none')
+            })
+            searchbar.classList.add('searchbar--small', 'shadow');
+            searchbarButton.classList.add('searchbar__button--small');
+        }
+        else {
+            navbar.classList.remove('scale-0');
+            searchbarInputs.forEach(input => {
+                input.classList.remove('d-none')
+            })
+            searchbar.classList.remove('searchbar--small', 'shadow');
+            searchbarButton.classList.remove('searchbar__button--small');
+        }
     }
+
+
+    function changeHeader(bool) {
+        let isVisible = bool;
+        const logo = document.querySelector('.logo--white');
+        const menu = document.querySelectorAll('.settings-nav a.nav-link');
+
+        if (isVisible) {
+            header.classList.add('bg-white', 'shadow-sm');
+            logo.src = './assets/logo-pink.png';
+            menu.forEach(link => {
+                link.classList.remove('text-white');
+                link.classList.add('text-secondary');
+            })
+        } else {
+            header.classList.remove('bg-white', 'shadow-sm');
+            logo.src = './assets/logo.png';
+            menu.forEach(link => {
+                link.classList.add('text-white');
+                link.classList.remove('text-secondary');
+            })
+        }
+    }
+
 }

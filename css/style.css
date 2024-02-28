@@ -104,6 +104,8 @@ header {
     width: 55px;
     position: absolute;
     right: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .searchbar__button--mobile {
