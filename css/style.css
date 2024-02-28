@@ -109,6 +109,15 @@ figure{
 
 
 /* results style */
+.buttonNav{
+    background-color:transparent;
+    border-color: transparent;
+}
+
+.buttonFilter{
+    background-color:transparent;
+    border-color: transparent;
+}
 
 .plusIcon{
     width: 30px;
@@ -128,6 +137,25 @@ figure{
     border-radius: 20px;
 }
 
+
+.figureCard{
+    max-width: 100%;
+    height: 150px;
+}
+
+.figureCard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardBnb div ion-icon{
+    color: #F5385D;
+}
+
+.cardsRow div p span{
+    font-weight: bolder;
+}
 
 .card-img {
     max-width: 80px;
