@@ -51,34 +51,6 @@ header {
     height: 30px;
 }
 
-/* GRID IMAGES */
-.img-big {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-.img-small-top {
-    border-top-right-radius: 10px;
-}
-
-.img-small-bottom {
-    border-bottom-right-radius: 10px;
-}
-
-.booking-btn {
-    background-color: var(--pink);
-    color: #fff;
-    border-radius: 10px;
-    border: none;
-    padding: 10px 30px;
-}
-
-/* REVIEW */
-.avatar {
-    width: 50px;
-    height: 50px;
-}
-
 .logo--white {
     width: 90px;
 }
@@ -211,4 +183,48 @@ ul.navbar-nav, .searchbar {
     .searchbar__container-button {
         max-width: 100%;
     }
+}
+
+/* APARTMENT PAGE: GRID */
+.bi-star-fill {
+    color: var(--pink);
+}
+
+.img-big {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    max-height: 400px;
+}
+
+.img-small {
+    max-height: 190px;
+}
+
+.img-small-top {
+    border-top-right-radius: 10px;
+    max-height: 190px;
+}
+
+.img-small-bottom {
+    border-bottom-right-radius: 10px;
+    max-height: 190px;
+}
+
+.grid-link {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+.booking-btn {
+    background-color: var(--pink);
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 30px;
+}
+
+/* REVIEW */
+.avatar {
+    width: 50px;
+    height: 50px;
 }
