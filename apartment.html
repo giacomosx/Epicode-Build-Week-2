@@ -12,48 +12,56 @@
 
 <body>
 
-    <nav class="container-xl">
-        <div class="row">
-            <div class="col-12 d-flex justify-content-between align-items-center">
-                <div>
-                    <a href="index.html"><img src="./assets/logo-pink.png" class="nav-logo" alt="airbnb pink logo"></a>
-                </div>
-                <div class="d-flex justify-content-between align-items-center gap-3">
-                    <a href="#" class="nav-link">Become a Host</a>
-                    <i class="bi bi-globe"></i>
-                    <div>
-                        <i class="bi bi-list"></i>
-                        <i class="bi bi-person-circle"></i>
+    <nav>
+        <div class="container-xl px-3">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 pb-5 d-flex justify-content-between align-items-center">
+                    <a href="./index.html" class="nav-link">
+                        <figure class="nav-logo">
+                            <img src="./assets/logo-pink.png" alt="airbnb" class="w-100">
+                        </figure>
+                    </a>
+                    <div class="d-flex justify-content-between align-items-center gap-4">
+                        <a href="./index.html" class="nav-link d-none d-md-block">Become a host</a>
+                        <i class="bi bi-globe"></i>
+                        <div class="d-flex justify-content-center align-items-center gap-1">
+                            <ion-icon name="menu-outline" class="d-none d-md-block"></ion-icon>
+                            <div class="dropdown">
+                                <button class="buttonNav d-block d-md-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <ion-icon name="menu-outline" class="d-block d-md-none"></ion-icon>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a href="./index.html" class="nav-link d-md-none d-block dropdown-item">Become a host</a></li>
+                                </ul>
+                            </div>
+                            <ion-icon name="person-circle" class="iconNav "></ion-icon>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
     
-    <section class="container mt-5">
+    <section class="container mt-5 px-5">
         <div class="row">
-            <div class="col-12">
-                <div class="d-flex justify-content-between">
-                    <div class="d-flex flex-column">
-                        <h4>Blarmor home</h4>
+            <div class="col-10 offset-md-1 ">
+                <div class="d-flex flex-column  justify-content-between">
+                    <h4>Blarmor home</h4>
+                    <div class="d-flex justify-content-between ">
                         <p>4 <i class="bi bi-star-fill"></i> 6 ratings - Inverness</p>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center gap-3">
-                        <div>
-                            <i class="bi bi-box-arrow-up"></i> Share
-                        </div>
-                        <div>
-                            <i class="bi bi-heart"></i> Save
+                        <div class="d-flex justify-content-center align-items-center gap-3">
+                            <p><i class="bi bi-box-arrow-up"></i> Share</p>
+                            <p><i class="bi bi-heart"></i> Save</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-6 ps-1 ps-md-0 pe-1 pe-md-0">
+            <div class="col-12 offset-md-1 col-md-5 pe-0">
                 <img src="./assets/1.webp" class="w-100 h-100 object-fit-cover img-big" alt="">
             </div>
-            <div class="col-12 col-md-6 pt-1 pt-md-0 ps-1 pe-md-0">
+            <div class="col-12 col-md-5">
                 <div class="row pb-2">
                     <div class="col-6 pe-0">
                         <img src="./assets/2.webp" class="w-100 img-small" alt="">
@@ -73,7 +81,7 @@
             </div>
         </div>
         <div class="row mt-5">
-            <div class="col-12 col-md-8 d-flex flex-column">
+            <div class="col-12 offset-md-1 col-md-7 d-flex flex-column">
                 <div class="mb-4">
                     <h5>House - Host: Erica</h5>
                     <p class="mb-0">3 rooms - Perfect place to visit the Loch Ness and go looking for Nessie.</p>
@@ -115,7 +123,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4 mt-md-5 shadow p-3 mb-md-5 bg-body-tertiary rounded d-flex flex-column align-content-center justify-content-center ">
+            <div class="col-12 col-md-11 offset-md-1 offset-lg-0 col-lg-3 mt-md-5 shadow p-3 mb-md-5 bg-body-tertiary rounded d-flex flex-column align-content-center justify-content-center bookingWindow">
                 <div class="d-flex justify-content-between">
                     <h6>Add dates to see the prices</h6>
                     <p><i class="bi bi-star-fill"></i> 4.0, 6 reviews</p>
@@ -135,38 +143,31 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12">
-                <div class="row mt-4 d-flex align-content-center ">
-                    <div class="col-6">
-                        <label for="nameInput" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="nameInputField" placeholder="Enter Name">
-                    </div>
-                    <div class="col-6 col-md-4">
-                        <label for="star-select" class="form-label">Rating</label>
-                        <div>
-                            <select name="stars" id="star-select" class="form-control">
-                                <option value="">Please choose a rating</option>
-                                <option value="one">1</option>
-                                <option value="two">2</option>
-                                <option value="three">3</option>
-                                <option value="four">4</option>
-                                <option value="five">5</option>
-                            </select>
-                        </div>
-                    </div>
+            <div class="col-6 offset-md-1 col-md-5">
+                <label for="nameInput" class="form-label">Name</label>
+                <input type="text" class="form-control" id="nameInputField" placeholder="Enter Name">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <label for="star-select" class="form-label">Rating</label>
+                <div>
+                    <select name="stars" id="star-select" class="form-control">
+                        <option value="one">*</option>
+                        <option value="two">**</option>
+                        <option value="three">***</option>
+                        <option value="four">****</option>
+                        <option value="five">*****</option>
+                    </select>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-md-10">
-                        <div class="mt-3 mb-3">
-                            <label for="reviewInput" class="form-label">Review</label>
-                            <textarea class="form-control" id="reviewInputField" rows="3" placeholder="Type in your review"></textarea>
-                        </div>
-                    </div>
+            </div>
+            <div class="col-12 offset-md-1 col-md-9 col-lg-8">
+                <div class="mt-3 mb-3">
+                    <label for="reviewInput" class="form-label">Review</label>
+                    <textarea class="form-control" id="reviewInputField" rows="3" placeholder="Type in your review"></textarea>
                 </div>
             </div>
         </div>
         <div class="row mt-5">
-            <div class="col-12 col-md-6">
+            <div class="col-12 offset-md-1 col-md-5">
                 <div class="d-flex flex-column">
                     <div class="d-flex gap-2 ">
                         <div class="avatar">
@@ -182,7 +183,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 offset-md-1 col-md-4">
                 <div class="d-flex flex-column">
                     <div class="d-flex gap-2 ">
                         <div class="avatar">
@@ -201,6 +202,15 @@
         </div>
     </section>
 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
 </body>
 

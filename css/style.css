@@ -223,6 +223,10 @@ ul.navbar-nav, .searchbar {
     padding: 10px 30px;
 }
 
+.bookingWindow {
+    height: 200px !important;
+}
+
 /* REVIEW */
 .avatar {
     width: 50px;
