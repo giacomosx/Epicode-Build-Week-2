@@ -59,24 +59,23 @@ function cards() {
         icon.innerHTML = '<ion-icon name="star"></ion-icon>'
         icon.classList.add('d-flex', 'justify-content-center', 'align-items-center')
         const value = document.createElement('p')
-        value.innerHTML = '<span>' + arrayValue[Math.floor(Math.random() * arrayValue.length)] + '</span>' + ' 4 ratings'
+        value.innerHTML = '<span>' + arrayValue[Math.floor(Math.random() * arrayValue.length)] + '</span>' + ' &#183; 4 ratings'
         value.classList.add('m-0')
 
         containerEvaluation.append(icon, value)
 
 
         /* parte info */
-        const apartament = document.createElement('p')
-        apartament.classList.add('mb-0')
-        apartament.textContent = 'Apartment Genova'
+        const apartament = document.createElement('a')
+        apartament.href='./apartment.html'
+        apartament.classList.add('mb-0', 'link-dark', 'text-decoration-none')
+        apartament.innerHTML = 'Apartment &#183; Genova'
         const description = document.createElement('p')
         description.textContent = arrayDescription[Math.floor(Math.random() * arrayDescription.length)]
         description.classList.add('m-0')
 
         /* appendo tutti gli elementi */
         cardBnb.append(figureCard, containerEvaluation, apartament, description)
-
-
     }
 }
 
