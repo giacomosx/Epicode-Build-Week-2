@@ -6,7 +6,14 @@ const searchbarInputs = document.querySelectorAll('.searchbar input');
 const searchbarButton = document.querySelector('.searchbar__button');
 
 
+window.onload = () => {
+    createCards()
+    setCityName()
+    
+}
+
 window.addEventListener('scroll', () => {
+
     if (this.innerWidth >= 1024) {
         searchbarAnimation();
 
@@ -40,7 +47,7 @@ const searchbarAnimation = () => {
 }
 
 
-function changeHeader(bool) {
+const changeHeader = (bool) => {
     let isVisible = bool;
     const logo = document.querySelector('.logo--white');
     const menu = document.querySelectorAll('.settings-nav a.nav-link');
@@ -60,4 +67,41 @@ function changeHeader(bool) {
             link.classList.remove('text-secondary');
         })
     }
+}
+
+
+const createCards = () => {
+    const cardsContainer = document.querySelector('.cards-container');
+    const cities = ['Roma', 'Milano', 'Napoli', 'Torino', 'Palermo', 'Genova', 'Bologna', 'Firenze', 'Bari', 'Catania', 'Venezia', 'Verona', 'Messina', 'Padova', 'Trieste', 'Taranto']
+
+    cities.map(city => {
+        const col = document.createElement('div');
+        col.classList.add('col');
+
+        col.innerHTML = `<div class="card flex-row border-0 mb-3  mb-lg-2  ">
+                            <div class="card-img ">
+                                 <img src="https://picsum.photos/200" alt="" class="w-100 rounded-4 ">
+                            </div>
+                            <div class="card-body d-flex flex-column justify-content-center ">
+                                <h3 class="card-title h6"><a class="text-decoration-none text-black cityName" href="apartment.html">${city}</a></h3>
+                                <p class="card-text text-secondary small">${Math.ceil(Math.random()*15)} hrs drive</p>
+                            </div>
+                        </div>`
+        
+        cardsContainer.append(col);
+    })
+
+}
+
+
+const setCityName = () => {
+    const links = document.querySelectorAll('a.cityName');
+    console.log(links);
+
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            let cityName = link.innerHTML;
+            localStorage.setItem('cityName', cityName)
+        })
+    })
 }

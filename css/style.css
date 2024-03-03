@@ -6,6 +6,7 @@
     --pink: #F5385D;
     --black: #212529;
     --gray: #808080;
+    --black--light: #222;
 }
 
 figure{
@@ -147,6 +148,10 @@ header {
     font-weight: bolder;
 }
 
+.cardBnb a:hover {
+    text-decoration: underline!important;
+}
+
 .card-img {
     max-width: 80px;
 }
@@ -174,15 +179,8 @@ ul.navbar-nav, .searchbar {
     margin-right: 10%;
 }
 
-
-@media only screen and (max-width: 767px) {
-    .searchbar {
-        border-radius: 5px;
-        width: 100%;
-    }
-    .searchbar__container-button {
-        max-width: 100%;
-    }
+.card a:hover {
+    text-decoration: underline!important;
 }
 
 /* APARTMENT PAGE: GRID */
@@ -201,25 +199,6 @@ ul.navbar-nav, .searchbar {
 .grid-link {
     text-decoration: none;
     color: var(--gray);
-}
-
-@media only screen and (min-width: 768px) {
-    .img-big {
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-    }
-    .img-small-top {
-        border-top-right-radius: 10px;
-    }
-    .img-small-bottom {
-        border-bottom-right-radius: 10px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .left-img {
-        padding-right: 0;
-    }
 }
 
 /* BOOKING WINDOW */
@@ -249,4 +228,35 @@ footer {
 footer a {
     text-decoration: none;
     color: var(--gray);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+    .img-big {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .img-small-top {
+        border-top-right-radius: 10px;
+    }
+    .img-small-bottom {
+        border-bottom-right-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .searchbar {
+        border-radius: 5px;
+        width: 100%;
+    }
+    .searchbar__container-button {
+        max-width: 100%;
+    }
+
+    .left-img {
+        padding-right: 0;
+    }
 }
