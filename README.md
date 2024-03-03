@@ -9,4 +9,3 @@ Repo Build Week 2 corso Web Developer
 - [apartment.html development]
 3. [Marco De Vincentiis](https://github.com/Marco-MDV) 
 - [result.html and results.js development]
-
