@@ -96,7 +96,6 @@ const createCards = () => {
 
 const setCityName = () => {
     const links = document.querySelectorAll('a.cityName');
-    console.log(links);
 
     links.forEach(link => {
         link.addEventListener('click', () => {
