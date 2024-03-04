@@ -27,7 +27,20 @@ const arrayValue = [
 ]
 
 
-function cards() {
+const getCityName = () => {
+    let cityName = localStorage.getItem('cityName') !== null ? localStorage.getItem('cityName') : 'Genova';
+    const spanCityNameContainer =  document.querySelector('.cityName');
+   
+    localStorage.clear()
+    
+    return spanCityNameContainer.innerHTML = cityName;
+}
+
+
+function cards(city) {
+
+    localStorage.setItem('cityName', city)
+
     const cardsRow = document.querySelector('.cardsRow')
 
     for (let index = 0; index < 10; index++) {
@@ -69,7 +82,7 @@ function cards() {
         const apartament = document.createElement('a')
         apartament.href='./apartment.html'
         apartament.classList.add('mb-0', 'link-dark', 'text-decoration-none')
-        apartament.innerHTML = 'Apartment &#183; Genova'
+        apartament.innerHTML = `Apartment &#183; ${city}`
         const description = document.createElement('p')
         description.textContent = arrayDescription[Math.floor(Math.random() * arrayDescription.length)]
         description.classList.add('m-0')
@@ -79,4 +92,6 @@ function cards() {
     }
 }
 
-cards()
+
+cards(getCityName());
+

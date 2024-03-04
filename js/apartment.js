@@ -1,13 +1,10 @@
-const setCityName = () => {
-    let cityName = localStorage.getItem('cityName');
-    const spanCityName =  document.querySelector('.cityName');
+const getCityName = () => {
+    let cityName = localStorage.getItem('cityName') !== null ? localStorage.getItem('cityName') : 'Genova';
+    const spanCityNameContainer =  document.querySelector('.cityName');
    
-    if (cityName.innerHTML === 'null') {
-        spanCityName.innerHTML = 'Genova';
-    } else {
-        spanCityName.innerHTML = '&#8901; ' + cityName;
-        localStorage.clear();
-    }
+    localStorage.clear()
+    
+    return spanCityNameContainer.innerHTML = '&#8901;' + cityName;
 }
 
-setCityName();
+getCityName();

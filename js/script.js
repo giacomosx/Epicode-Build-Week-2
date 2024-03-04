@@ -83,7 +83,7 @@ const createCards = () => {
                                  <img src="https://picsum.photos/200" alt="" class="w-100 rounded-4 ">
                             </div>
                             <div class="card-body d-flex flex-column justify-content-center ">
-                                <h3 class="card-title h6"><a class="text-decoration-none text-black cityName" href="apartment.html">${city}</a></h3>
+                                <h3 class="card-title h6"><a class="text-decoration-none text-black cityName" href="results.html">${city}</a></h3>
                                 <p class="card-text text-secondary small">${Math.ceil(Math.random()*15)} hrs drive</p>
                             </div>
                         </div>`
@@ -91,17 +91,4 @@ const createCards = () => {
         cardsContainer.append(col);
     })
 
-}
-
-
-const setCityName = () => {
-    const links = document.querySelectorAll('a.cityName');
-    console.log(links);
-
-    links.forEach(link => {
-        link.addEventListener('click', () => {
-            let cityName = link.innerHTML;
-            localStorage.setItem('cityName', cityName)
-        })
-    })
 }
